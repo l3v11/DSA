@@ -7,7 +7,7 @@ Auxiliary Space: O(1)
 using namespace std;
 
 // Implementation of Bubble Sort
-void bubble_sort(int arr[], int n)
+void bubbleSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
@@ -44,7 +44,7 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
 
-    bubble_sort(arr, n);
+    bubbleSort(arr, n);
 
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++)

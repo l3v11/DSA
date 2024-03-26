@@ -7,6 +7,8 @@ Auxiliary Space: O(n)
 #include <vector>
 using namespace std;
 
+// Print all primes smaller than or equal
+// to n using Sieve of Eratosthenes.
 void sieve(int n)
 {
     vector<bool> is_prime(n + 1, true);

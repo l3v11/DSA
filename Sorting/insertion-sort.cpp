@@ -7,7 +7,7 @@ Auxiliary Space: O(1)
 using namespace std;
 
 // Implementation of Insertion Sort
-void insertion_sort(int arr[], int n)
+void insertionSort(int arr[], int n)
 {
     for (int i = 1; i < n; i++)
     {
@@ -40,7 +40,7 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
 
-    insertion_sort(arr, n);
+    insertionSort(arr, n);
 
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++)
