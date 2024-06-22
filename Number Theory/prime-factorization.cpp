@@ -7,23 +7,19 @@ Auxiliary Space: O(1)
 using namespace std;
 
 // Print all prime factors
-// of a given number n .
-void primeFactor(int n)
-{
+// of a given number n.
+void primeFactor(int n) {
     // Print the number of 2s that divide n
-    while (n % 2 == 0)
-    {
+    while (n % 2 == 0) {
         cout << 2 << ' ';
         n /= 2;
     }
 
     // n must be odd at this point. So we can skip 
     // one element (Note i += 2)
-    for (int i = 3; i * i <= n; i += 2)
-    {
+    for (int i = 3; i * i <= n; i += 2) {
         // While i divides n, print i and divide n
-        while (n % i == 0)
-        {
+        while (n % i == 0) {
             cout << i << ' ';
             n /= i;
         }
@@ -35,8 +31,7 @@ void primeFactor(int n)
         cout << n << ' ';
 }
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
     primeFactor(n);

@@ -6,11 +6,9 @@ Auxiliary Space: O(1)
 #include <iostream>
 using namespace std;
 
-// Implementation of Insertion Sort
-void insertionSort(int arr[], int n)
-{
-    for (int i = 1; i < n; i++)
-    {
+// Function for Insertion Sort
+void insertionSort(int arr[], int n) {
+    for (int i = 1; i < n; i++) {
         int tmp = arr[i];
         int j = i - 1;
 
@@ -20,8 +18,7 @@ void insertionSort(int arr[], int n)
         to one position ahead of their
         current position
         */
-        while(j >= 0 && arr[j] > tmp)
-        {
+        while(j >= 0 && arr[j] > tmp) {
             arr[j + 1] = arr[j];
             j--;
         }
@@ -29,13 +26,12 @@ void insertionSort(int arr[], int n)
     }
 }
 
-int main()
-{
-    cout << "Enter size of the array: ";
+int main() {
+    cout << "Enter the size of the array: ";
     int n;
     cin >> n;
 
-    cout << "Enter elements of the array: ";
+    cout << "Enter the elements of the array: ";
     int arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];

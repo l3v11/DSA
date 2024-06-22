@@ -1,25 +1,21 @@
 /*
 ***Bubble Sort***
 Time Complexity: O(n^2)
-Auxiliary Space: O(1)
+Auxiliary Space: O(2)
 */
 #include <iostream>
 using namespace std;
 
-// Implementation of Bubble Sort
-void bubbleSort(int arr[], int n)
-{
-    for (int i = 0; i < n - 1; i++)
-    {
+// Function for Bubble Sort
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
         int swapped = 0;
-        for (int j = 0; j < n - i - 1; j++)
-        {
+        for (int j = 0; j < n - i - 1; j++) {
             /*
             '>' for ascending order
             '<' for descending order
             */
-            if (arr[j] > arr[j + 1])
-            {
+            if (arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
                 swapped = 1;
             }
@@ -33,13 +29,12 @@ void bubbleSort(int arr[], int n)
     }
 }
 
-int main()
-{
-    cout << "Enter size of the array: ";
+int main() {
+    cout << "Enter the size of the array: ";
     int n;
     cin >> n;
 
-    cout << "Enter elements of the array: ";
+    cout << "Enter the elements of the array: ";
     int arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];

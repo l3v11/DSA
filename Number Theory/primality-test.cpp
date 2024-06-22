@@ -7,18 +7,15 @@ Auxiliary Space: O(1)
 using namespace std;
 
 // Determine if a number is prime or not.
-bool isPrime(int n)
-{
-    for (int i = 2; i * i <= n; i++)
-    {
+bool isPrime(int n) {
+    for (int i = 2; i * i <= n; i++) {
         if (n % i == 0)
             return false;
     }
     return n >= 2;
 }
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
 

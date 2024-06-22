@@ -9,8 +9,7 @@ using namespace std;
 
 // Print all primes smaller than or equal
 // to n using Sieve of Eratosthenes.
-void sieve(int n)
-{
+void sieve(int n) {
     vector<bool> is_prime(n + 1, true);
     is_prime[0] = is_prime[1] = false;
     /*
@@ -18,10 +17,8 @@ void sieve(int n)
     the numbers which are divisible by 'i' and are
     greater than or equal to the square of it. 
     */
-    for (int i = 2; i * i <= n; i++)
-    {
-        if (is_prime[i]) // is 'i' true?
-        {
+    for (int i = 2; i * i <= n; i++) {
+        if (is_prime[i]) { // is 'i' true?
             for (int j = i * i; j <= n; j += i)
                 is_prime[j] = false;
         }
@@ -44,8 +41,7 @@ void sieve(int n)
     cout << '\n';
 }
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
     sieve(n);
