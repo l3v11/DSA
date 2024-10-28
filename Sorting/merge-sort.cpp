@@ -7,8 +7,7 @@ Auxiliary Space: O(n)
 #include <vector>
 using namespace std;
 
-// Function for Merge Sort
-void merge(vector<int> &arr, int low, int mid, int high) {
+void merge(vector<int>& arr, int low, int mid, int high) {
 	vector<int> tmp;
 	int left = low; // starting index of left half of arr
 	int right = mid + 1; // starting index of right half of arr
@@ -49,12 +48,12 @@ void merge(vector<int> &arr, int low, int mid, int high) {
 	*/
 }
 
-void mergeSort(vector<int> &arr, int low, int high) {
-	if (low >= high) return;
-
+// Function for Merge Sort
+void mergeSort(vector<int>& arr, int low, int high) {
+	if (low >= high) return; // base case
 	int mid = low + (high - low) / 2;
-	mergeSort(arr, low, mid); // left half
-	mergeSort(arr, mid + 1, high); // right half
+	mergeSort(arr, low, mid); // sort the left half
+	mergeSort(arr, mid + 1, high); // sort the right half
 	merge(arr, low, mid, high); // merging sorted halves
 }
 

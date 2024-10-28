@@ -19,6 +19,7 @@ void sieve(int n) {
     */
     for (int i = 2; i * i <= n; i++) {
         if (is_prime[i]) { // is 'i' true?
+            // Mark multiples of 'i' as not prime
             for (int j = i * i; j <= n; j += i)
                 is_prime[j] = false;
         }

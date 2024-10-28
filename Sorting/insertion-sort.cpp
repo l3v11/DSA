@@ -11,14 +11,13 @@ void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int tmp = arr[i];
         int j = i - 1;
-
         /*
         Move elements of arr[0..i-1],
         that are greater than tmp, 
         to one position ahead of their
         current position
         */
-        while(j >= 0 && arr[j] > tmp) {
+        while(j >= 0 and arr[j] > tmp) {
             arr[j + 1] = arr[j];
             j--;
         }
