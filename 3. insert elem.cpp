@@ -2,10 +2,9 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     const int size = 5;
-    int arr[size + 1] = {1, 2, 4, 5, 6};  // Extra space for the new element  1 2 4 5 6 -> 1 2 - 4 5 6
+    int arr[size + 1] = {1, 2, 4, 5, 6};  // Extra space for the new element
 
     int element = 3;
     int index = 2;

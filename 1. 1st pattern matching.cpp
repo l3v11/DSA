@@ -1,13 +1,14 @@
+// 1st pattern matching
 #include <iostream>
 #include <string>
 using namespace std;
 
-int main() 
-{
+int main() {
     string txt = "aabbbabb";
-    string pat = "baby";
+    string pat = "bab";
     int N = txt.size();  // 8
     int M = pat.size();  // 3
+    bool found = false;
 
     for (int i = 0; i < N - M + 1; i++) {
         int j;
@@ -15,11 +16,14 @@ int main()
             if (txt[i + j] != pat[j]) // j = 2
                 break;
 
-        if (j == M)
+        if (j == M) {
             cout << "Pattern found at index " << i << '\n';
-        else
-            cout << "Pattern not found" << '\n';
+            found = true;
+        }
     }
+
+    if (!found)
+        cout << "Pattern not found" << '\n';
     
     return 0;
 }

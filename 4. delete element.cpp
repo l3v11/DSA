@@ -1,8 +1,8 @@
+// deleting an element in an array
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int size = 6;
     int arr[size] = {1, 2, 3, 4, 5, 6};
     int index = 2;
