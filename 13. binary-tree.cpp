@@ -1,3 +1,4 @@
+// binary tree
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,8 +12,7 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<int> preorderTraverse(TreeNode *root)
-    {
+    vector<int> preorderTraverse(TreeNode *root) {
         vector<int> preorder;
 
         if (root == NULL)

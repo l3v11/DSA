@@ -15,12 +15,6 @@ public:
         this->next = NULL;
         this->prev = NULL;
     }
-
-    // Destructor
-    ~Node() {
-        int val = this->data;
-        cout << "Memory freed for node with value " << val << endl;
-    }
 };
 
 // Function to calculate the length of the list

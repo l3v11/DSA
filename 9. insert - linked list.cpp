@@ -13,12 +13,6 @@ public:
         this->data = data;
         this->next = NULL;
     }
-
-    // Destructor
-    ~Node() {
-        int val = this->data;
-        cout << "Memory freed for node with value " << val << endl;
-    }
 };
 
 // Insert at the head (beginning) of the list

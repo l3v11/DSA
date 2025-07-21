@@ -1,5 +1,5 @@
 /*
-***Insertion Sort***
+***Heap Sort***
 Time Complexity: O(n logn)
 Auxiliary Space: O(1)
 */
